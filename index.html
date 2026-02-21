@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX GYM — Forge Your Legacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo" id="loaderLogo">APEX</div>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar" id="loaderBar"></div>
+  </div>
+</div>
+
+<!-- FLOATING SHAPES -->
+<div class="floating-shapes">
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  <div class="shape shape-3"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">APEX GYM</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#trainers">Trainers</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#pricing" class="nav-cta">Join Now</a>
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" id="closeMenu">×</button>
+  <a href="#about" class="mob-link">About</a>
+  <a href="#programs" class="mob-link">Programs</a>
+  <a href="#trainers" class="mob-link">Trainers</a>
+  <a href="#pricing" class="mob-link">Pricing</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-tag" id="heroTag">Elite Performance Gym · Est. 2010</div>
+    <h1 class="hero-headline" id="heroHead">
+      <span class="hero-line"><span>Transform</span></span>
+      <span class="hero-line"><span>Your <em class="hero-line-accent" style="font-style:normal;">Body.</em></span></span>
+      <span class="hero-line"><span style="color:var(--text-dim); font-size:0.7em;">Forge Your</span></span>
+      <span class="hero-line"><span>Legacy.</span></span>
+    </h1>
+    <p class="hero-sub" id="heroSub">
+      Elite training, world-class equipment, and expert coaches. Your transformation starts the moment you walk through our doors.
+    </p>
+    <div class="hero-actions" id="heroActions">
+      <a href="#pricing" class="btn-primary">Join Now <span>→</span></a>
+      <a href="#programs" class="btn-secondary">View Programs</a>
+    </div>
+  </div>
+  <div class="hero-media" id="heroMedia">
+    <img class="hero-portrait" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1100&q=80" alt="Athlete training with dumbbells">
+    <div class="hero-media-badge">
+      <strong>98%</strong>
+      <span>Member satisfaction</span>
+    </div>
+  </div>
+  <!-- <div class="hero-scroll" id="heroScroll">
+    <div class="scroll-line"></div>
+    <span>Scroll to explore</span>
+  </div> -->
+  <div class="hero-stats" id="heroStats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">12<span style="font-size:0.4em;color:var(--neon)">K+</span></div>
+      <div class="hero-stat-label">Members</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">48<span style="font-size:0.4em;color:var(--neon)"></span></div>
+      <div class="hero-stat-label">Trainers</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-label reveal">Our Story</div>
+    <h2 class="section-title reveal">Built For<br><span style="color:var(--neon)">Champions</span></h2>
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Gym interior with athlete lifting weights">
+        <div class="about-image-overlay"></div>
+        <div class="about-image-accent"></div>
+      </div>
+      <div class="about-text reveal">
+        <p>APEX GYM is not just a gym. It's a forge. Since 2010, we've been the training ground for everyday people who want extraordinary results — and competitive athletes who demand nothing but the best.</p>
+        <p>Our 40,000 sq ft facility houses the most advanced equipment, cutting-edge recovery zones, and a community of relentless individuals who push each other to new heights every single day.</p>
+        <p>We don't believe in shortcuts. We believe in hard work, smart programming, and world-class coaching. That's why our members see real results — fast.</p>
+        <div class="about-features">
+          <div class="about-feat">
+            <div class="about-feat-icon">🏆</div>
+            <div><strong>Award-Winning</strong><br><span style="color:var(--text-dim);font-size:13px">Best Gym 5 years running</span></div>
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon">⚡</div>
+            <div><strong>Elite Equipment</strong><br><span style="color:var(--text-dim);font-size:13px">State-of-the-art machines</span></div>
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon">🔬</div>
+            <div><strong>Science-Backed</strong><br><span style="color:var(--text-dim);font-size:13px">Evidence-based programs</span></div>
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon">🌐</div>
+            <div><strong>24/7 Access</strong><br><span style="color:var(--text-dim);font-size:13px">Train on your schedule</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="12000">0</span><span class="stat-unit">+</span></div>
+      <div class="stat-label">Active Members</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="48">0</span></div>
+      <div class="stat-label">Expert Trainers</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="15">0</span><span class="stat-unit">+</span></div>
+      <div class="stat-label">Years of Excellence</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="98">0</span><span class="stat-unit">%</span></div>
+      <div class="stat-label">Client Satisfaction</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <div class="section-wrap">
+    <div class="section-label reveal">What We Offer</div>
+    <h2 class="section-title reveal">Training<br><span style="color:var(--neon)">Programs</span></h2>
+    <div class="programs-grid">
+      <div class="program-card">
+        <div class="program-img">
+          <img class="program-img-bg" src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=900&q=80" alt="Strength training with barbell">
+          <div class="program-img-overlay"></div>
+          <div class="program-num">01</div>
+        </div>
+        <div class="program-body">
+          <span class="program-icon">💪</span>
+          <div class="program-name">Strength Training</div>
+          <p class="program-desc">Build raw power and muscle mass with our periodized strength programs designed by Olympic coaches.</p>
+          <a href="#" class="program-link">Explore Program →</a>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="program-img">
+          <img class="program-img-bg" src="https://images.unsplash.com/photo-1434596922112-19c563067271?auto=format&fit=crop&w=900&q=80" alt="Athlete doing cardio workout">
+          <div class="program-img-overlay"></div>
+          <div class="program-num">02</div>
+        </div>
+        <div class="program-body">
+          <span class="program-icon">❤️‍🔥</span>
+          <div class="program-name">Cardio & HIIT</div>
+          <p class="program-desc">Torch fat and skyrocket your endurance with high-intensity interval training that delivers results.</p>
+          <a href="#" class="program-link">Explore Program →</a>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="program-img">
+          <img class="program-img-bg" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80" alt="Cross training workout session">
+          <div class="program-img-overlay"></div>
+          <div class="program-num">03</div>
+        </div>
+        <div class="program-body">
+          <span class="program-icon">🔥</span>
+          <div class="program-name">CrossFit</div>
+          <p class="program-desc">Forged fitness through constantly varied functional movements performed at high intensity.</p>
+          <a href="#" class="program-link">Explore Program →</a>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="program-img">
+          <img class="program-img-bg" src="https://images.unsplash.com/photo-1577221084712-45b0445d2b00?auto=format&fit=crop&w=900&q=80" alt="Personal trainer guiding client">
+          <div class="program-img-overlay"></div>
+          <div class="program-num">04</div>
+        </div>
+        <div class="program-body">
+          <span class="program-icon">🎯</span>
+          <div class="program-name">Personal Training</div>
+          <p class="program-desc">One-on-one sessions with elite coaches who build a program precisely around your goals.</p>
+          <a href="#" class="program-link">Explore Program →</a>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="program-img">
+          <img class="program-img-bg" src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=900&q=80" alt="Yoga recovery training class">
+          <div class="program-img-overlay"></div>
+          <div class="program-num">05</div>
+        </div>
+        <div class="program-body">
+          <span class="program-icon">🌿</span>
+          <div class="program-name">Yoga & Recovery</div>
+          <p class="program-desc">Restore your body and sharpen your mind with guided yoga and active recovery sessions.</p>
+          <a href="#" class="program-link">Explore Program →</a>
+        </div>
+      </div>
+      <div class="program-card">
+        <div class="program-img">
+          <img class="program-img-bg" src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=900&q=80" alt="Combat fitness and boxing drills">
+          <div class="program-img-overlay"></div>
+          <div class="program-num">06</div>
+        </div>
+        <div class="program-body">
+          <span class="program-icon">🥋</span>
+          <div class="program-name">Combat Fitness</div>
+          <p class="program-desc">Boxing, MMA conditioning, and martial arts fitness programs for total-body transformation.</p>
+          <a href="#" class="program-link">Explore Program →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="section-wrap">
+    <div class="section-label reveal">Our Edge</div>
+    <h2 class="section-title reveal">Why Choose<br><span style="color:var(--neon)">APEX</span></h2>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01</div>
+        <div class="why-icon">🏆</div>
+        <div class="why-title">World-Class Equipment</div>
+        <p class="why-desc">40,000+ sq ft of premium equipment including Eleiko barbells, Hammer Strength machines, and state-of-the-art cardio tech. We invest so you don't have to compromise.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02</div>
+        <div class="why-icon">🧬</div>
+        <div class="why-title">Science-Backed Programming</div>
+        <p class="why-desc">Every program is built on peer-reviewed research. Our performance team includes PhDs, Olympic coaches, and certified sports nutritionists — all working for your results.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03</div>
+        <div class="why-icon">👥</div>
+        <div class="why-title">Elite Community</div>
+        <p class="why-desc">Surround yourself with people who push limits. Our members range from first-timers to competitive athletes — the energy is electric, and it's contagious.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">04</div>
+        <div class="why-icon">📱</div>
+        <div class="why-title">APEX App & Tracking</div>
+        <p class="why-desc">Track every rep, measure every PR, and stay accountable with our premium APEX app. Built-in progress analytics, coach messaging, and on-demand workout library.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers">
+  <div class="section-wrap">
+    <div class="section-label reveal">Meet The Team</div>
+    <h2 class="section-title reveal">Elite<br><span style="color:var(--neon)">Trainers</span></h2>
+    <div class="trainers-grid">
+      <div class="trainer-card reveal">
+        <img class="trainer-img" src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=80" alt="Trainer Marcus Webb portrait">
+        <div class="trainer-overlay">
+          <div class="trainer-socials">
+            <a class="trainer-social" href="#">𝕏</a>
+            <a class="trainer-social" href="#">in</a>
+            <a class="trainer-social" href="#">📷</a>
+          </div>
+          <div class="trainer-name">Marcus Webb</div>
+          <div class="trainer-role">Strength & Power</div>
+        </div>
+      </div>
+      <div class="trainer-card reveal">
+        <img class="trainer-img" src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Trainer Sofia Reyes portrait">
+        <div class="trainer-overlay">
+          <div class="trainer-socials">
+            <a class="trainer-social" href="#">𝕏</a>
+            <a class="trainer-social" href="#">in</a>
+            <a class="trainer-social" href="#">📷</a>
+          </div>
+          <div class="trainer-name">Sofia Reyes</div>
+          <div class="trainer-role">CrossFit & HIIT</div>
+        </div>
+      </div>
+      <div class="trainer-card reveal">
+        <img class="trainer-img" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80" alt="Trainer Amara Chen portrait">
+        <div class="trainer-overlay">
+          <div class="trainer-socials">
+            <a class="trainer-social" href="#">𝕏</a>
+            <a class="trainer-social" href="#">in</a>
+            <a class="trainer-social" href="#">📷</a>
+          </div>
+          <div class="trainer-name">Amara Chen</div>
+          <div class="trainer-role">Yoga & Recovery</div>
+        </div>
+      </div>
+      <div class="trainer-card reveal">
+        <img class="trainer-img" src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Trainer Diego Santos portrait">
+        <div class="trainer-overlay">
+          <div class="trainer-socials">
+            <a class="trainer-social" href="#">𝕏</a>
+            <a class="trainer-social" href="#">in</a>
+            <a class="trainer-social" href="#">📷</a>
+          </div>
+          <div class="trainer-name">Diego Santos</div>
+          <div class="trainer-role">Combat & MMA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-wrap">
+    <div class="section-label reveal">Invest In Yourself</div>
+    <h2 class="section-title reveal">Pricing<br><span style="color:var(--neon)">Plans</span></h2>
+    <div class="pricing-toggle reveal">
+      <span>Monthly</span>
+      <div class="toggle-wrap" id="toggleWrap">
+        <div class="toggle-ball"></div>
+      </div>
+      <span>Yearly <span class="save-badge">Save 30%</span></span>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-plan">Starter</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">$</span>
+          <span class="price-val" data-monthly="39" data-yearly="27">39</span>
+          <span class="pricing-period">/month</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Full Gym Access</li>
+          <li>Group Classes (10/month)</li>
+          <li>Locker Room Access</li>
+          <li>APEX App Basic</li>
+          <li class="disabled">Personal Training</li>
+          <li class="disabled">Nutrition Coaching</li>
+        </ul>
+        <a href="#" class="btn-secondary" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+      <div class="pricing-card featured reveal">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-plan">Elite</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">$</span>
+          <span class="price-val" data-monthly="79" data-yearly="55">79</span>
+          <span class="pricing-period">/month</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Full Gym Access 24/7</li>
+          <li>Unlimited Group Classes</li>
+          <li>Locker + Towel Service</li>
+          <li>APEX App Premium</li>
+          <li>2 PT Sessions/month</li>
+          <li class="disabled">Nutrition Coaching</li>
+        </ul>
+        <a href="#" class="btn-primary" style="width:100%;justify-content:center;">Join Now</a>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-plan">Pro</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">$</span>
+          <span class="price-val" data-monthly="149" data-yearly="104">149</span>
+          <span class="pricing-period">/month</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Full Gym Access 24/7</li>
+          <li>Unlimited Group Classes</li>
+          <li>Locker + Towel + Sauna</li>
+          <li>APEX App Premium+</li>
+          <li>Unlimited PT Sessions</li>
+          <li>Nutrition Coaching</li>
+        </ul>
+        <a href="#" class="btn-secondary" style="width:100%;justify-content:center;">Go Pro</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-wrap">
+    <div class="section-label reveal">Transformations</div>
+    <h2 class="section-title reveal">Our<br><span style="color:var(--neon)">Gallery</span></h2>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" data-img="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=1200&q=80">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=900&q=80" alt="Gym floor training session">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item reveal" data-img="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1200&q=80">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&q=80" alt="Woman lifting dumbbells">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item reveal" data-img="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Treadmill cardio workout">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item reveal" data-img="https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=1200&q=80">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=900&q=80" alt="Boxing training class">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+      <div class="gallery-item reveal" data-img="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80">
+        <img class="gallery-img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Stretching and mobility session">
+        <div class="gallery-overlay">🔍</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-wrap" style="padding-bottom:0">
+    <div class="section-label reveal">Success Stories</div>
+    <h2 class="section-title reveal">What Members<br><span style="color:var(--neon)">Say</span></h2>
+  </div>
+  <div style="padding:60px 0 120px">
+    <div class="testimonials-track-wrap">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"APEX completely transformed how I think about fitness. In 6 months I went from struggling with 20 pushups to deadlifting 300 lbs. The coaches here are genuinely invested in your success."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JR</div>
+            <div>
+              <div class="testimonial-name">James Rodriguez</div>
+              <div class="testimonial-role">Member for 2 years</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The energy in this gym is unlike anything I've experienced. 24/7 access, top-tier equipment, and coaches who actually know their stuff. Best investment I've ever made."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SK</div>
+            <div>
+              <div class="testimonial-name">Sarah Kim</div>
+              <div class="testimonial-role">Member for 3 years</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Lost 40 lbs in 5 months. I've tried every gym in the city — APEX is a different league. The programming is legit, and the community keeps you accountable when motivation dips."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MP</div>
+            <div>
+              <div class="testimonial-name">Michael Park</div>
+              <div class="testimonial-role">Member for 1 year</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"As a competitive powerlifter, I need a gym that takes strength seriously. APEX has the bars, the platforms, the community, and the expertise. It's a powerlifter's paradise."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AL</div>
+            <div>
+              <div class="testimonial-name">Alex Lee</div>
+              <div class="testimonial-role">Member for 4 years</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Amara's yoga classes are transformative. I came for the strength training and stayed for the recovery sessions. My sleep, mood, and lifts have never been better. This place has everything."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RN</div>
+            <div>
+              <div class="testimonial-name">Rachel Nguyen</div>
+              <div class="testimonial-role">Member for 18 months</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-label reveal">Get In Touch</div>
+    <h2 class="section-title reveal">Start Your<br><span style="color:var(--neon)">Journey</span></h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-val">1200 Apex Boulevard, Suite 100<br>New York, NY 10001</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <div class="contact-info-label">Hours</div>
+            <div class="contact-info-val">24/7 Member Access<br>Staff: Mon–Fri 5am–11pm</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-val">+1 (212) 555-APEX</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-val">hello@apexgym.com</div>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          📍 Google Maps Embed — 1200 Apex Blvd, New York
+        </div>
+      </div>
+      <div class="reveal">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required>
+            <label class="form-label" for="name">Full Name</label>
+            <div class="form-error" id="nameError">Please enter your name</div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required>
+            <label class="form-label" for="email">Email Address</label>
+            <div class="form-error" id="emailError">Please enter a valid email</div>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder=" ">
+            <label class="form-label" for="phone">Phone (Optional)</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder=" " required></textarea>
+            <label class="form-label" for="message">Your Message</label>
+            <div class="form-error" id="msgError">Please write a message</div>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;border:none;">
+            Send Message ✓
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-logo">APEX GYM</span>
+      <p class="footer-desc">The premier training destination for those who demand more from themselves. Elite equipment, world-class coaches, unstoppable community.</p>
+      <div class="footer-socials">
+        <a class="footer-social" href="#">𝕏</a>
+        <a class="footer-social" href="#">f</a>
+        <a class="footer-social" href="#">📷</a>
+        <a class="footer-social" href="#">▶</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#about">About APEX</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Programs</div>
+      <ul class="footer-links">
+        <li><a href="#">Strength Training</a></li>
+        <li><a href="#">Cardio & HIIT</a></li>
+        <li><a href="#">CrossFit</a></li>
+        <li><a href="#">Personal Training</a></li>
+        <li><a href="#">Yoga & Recovery</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Newsletter</div>
+      <p style="font-size:13px;color:var(--text-dim);margin-bottom:20px;">Get training tips & member exclusives.</p>
+      <div class="newsletter-input-wrap">
+        <input type="email" class="newsletter-input" placeholder="your@email.com">
+        <button class="newsletter-btn">→</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 <span>APEX GYM</span>. All rights reserved.</div>
+    <div class="footer-copy">Designed with ⚡ for champions</div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">×</button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
